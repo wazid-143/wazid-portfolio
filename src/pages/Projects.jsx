@@ -1,14 +1,15 @@
+import "./Projects.css";
 import studentERP from "../assets/images/student-erp.png";
 import netflixClone from "../assets/images/netflix-clone.png";
 import nextalk from "../assets/images/nextalk.png";
 function Projects() {
   return (
-    <section id="projects" className="projects">
+     <section id="projects" className="projects" data-aos="zoom-in">
       <h2>My Projects</h2>
 
-      <div className="projects-container">
+        <div className="projects-container">
 
-        <div className="project-card">
+         <div className="project-card" data-aos="flip-left">
           <img src={studentERP} alt="Student ERP System" />
           <h3>Student ERP System</h3>
 
@@ -36,7 +37,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="project-card">
+         <div className="project-card" data-aos="flip-up">
           <img src={netflixClone} alt="Netflix Clone" />
           <h3>Netflix Clone</h3>
 
@@ -64,7 +65,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="project-card">
+         <div className="project-card" data-aos="flip-right">
             <img src={nextalk} alt="NexTalk Chat App" />
           <h3>NexTalk Chat App</h3>
 

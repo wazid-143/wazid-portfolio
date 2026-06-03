@@ -1,13 +1,38 @@
 import "./Home.css";
 import profile from "../assets/images/profile.jpg";
+import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 function Home() {
+  useEffect(() => {
+  AOS.init({
+    duration: 1000,
+    once: true,
+  });
+ }, []);
   return (
   <div>
      <section id="home" className="hero">
-      <div className="hero-content">
+       <div className="hero-content" data-aos="fade-right">
         <h1>Hi, I'm Wazid Ansari </h1>
 
-        <h2>Frontend Developer | Python & Flask Developer</h2>
+        <h2>
+         <Typewriter
+         words={[
+           "Frontend Developer",
+           "React Developer",
+           "Python Developer",
+           "Flask Developer"
+         ]}
+         loop={0}
+         cursor
+         cursorStyle="|"
+         typeSpeed={80}
+         deleteSpeed={50}
+          delaySpeed={1500}
+        />
+        </h2>
 
         <p>
           Passionate about building modern, responsive and user-friendly web
@@ -38,12 +63,12 @@ function Home() {
         </div>
       </div>
 
-      <div className="hero-image">
+      <div className="hero-image" data-aos="fade-left">
         <img src={profile} alt="Wazid Ansari" />
       </div>
      </section>
 
-     <section className="stats">
+      <section className="stats" data-aos="zoom-in">
       <div className="stat-card">
         <h3>4+</h3>
         <p>Projects Completed</p>

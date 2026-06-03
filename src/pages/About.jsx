@@ -1,6 +1,7 @@
+import "./About.css";
 function About() {
   return (
-    <section id="about" className="about">
+    <section id="about" className="about" data-aos="fade-up">
       {/* About Content */}
        <h2>About Me</h2>
 

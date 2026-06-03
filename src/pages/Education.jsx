@@ -1,6 +1,7 @@
+import "./Education.css";
 function Education() {
   return (
-     <section id="education" className="education">
+      <section id="education" className="education" data-aos="fade-right">
       <h2>Education & Journey</h2>
 
       <div className="timeline">
