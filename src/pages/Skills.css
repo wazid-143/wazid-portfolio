@@ -6,7 +6,7 @@
 .skills h2 {
   font-size: 3rem;
   color: #61dafb;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .skills-container {
@@ -18,7 +18,7 @@
 .skill-category {
   border: 2px solid #61dafb;
   border-radius: 15px;
-  padding: 25px;
+  padding: 22px;
   background: rgba(255,255,255,0.03);
   transition: 0.3s;
 }
@@ -30,14 +30,87 @@
 
 .skill-category h3 {
   color: #61dafb;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
 .skill-category span {
-  display: inline-block;
-  margin: 6px;
-  padding: 8px 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 5px;
+  padding: 7px 12px;
   border: 1px solid #61dafb;
   border-radius: 20px;
   color: white;
+  background: rgba(15, 23, 42, 0.45);
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+.skill-with-icon {
+  border-color: rgba(97, 218, 251, 0.75);
+}
+
+.skill-icon {
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+
+.html-icon {
+  color: #e34f26;
+}
+
+.css-icon {
+  color: #1572b6;
+}
+
+.js-icon {
+  color: #f7df1e;
+}
+
+.react-icon {
+  color: #61dafb;
+}
+
+.python-icon {
+  color: #ffd43b;
+}
+
+.flask-icon,
+.github-icon {
+  color: #f8fafc;
+}
+
+.sqlite-icon {
+  color: #74c0fc;
+}
+
+.git-icon {
+  color: #f05032;
+}
+
+@media (max-width: 768px) {
+  .skills h2 {
+    font-size: 2.2rem;
+    margin-bottom: 32px;
+  }
+
+  .skill-category {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 420px) {
+  .skills {
+    padding: 70px 6%;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-category span {
+    font-size: 0.9rem;
+    padding: 7px 10px;
+  }
 }
