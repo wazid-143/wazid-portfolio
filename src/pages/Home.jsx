@@ -15,15 +15,15 @@ function Home() {
   <div>
      <section id="home" className="hero">
        <div className="hero-content" data-aos="fade-right">
-        <h1>Hi, I'm Wazid Ansari </h1>
+        <span className="hero-eyebrow">Frontend Developer • React.js • Flask • Python</span>
+        <h1>Hi, I'm Wazid Ansari</h1>
 
         <h2>
          <Typewriter
          words={[
-           "Frontend Developer",
-           "React Developer",
-           "Python Developer",
-           "Flask Developer"
+           "I build responsive React interfaces",
+           "I create practical Python and Flask apps",
+           "I turn project ideas into polished web experiences"
          ]}
          loop={0}
          cursor
@@ -35,8 +35,8 @@ function Home() {
         </h2>
 
         <p>
-          Passionate about building modern, responsive and user-friendly web
-          applications.
+          B.Tech graduate and Frontend Developer passionate about building responsive,
+           web applications using React.js, JavaScript, Python and Flask.
         </p>
 
         <div className="hero-buttons">
@@ -70,23 +70,23 @@ function Home() {
 
       <section className="stats" data-aos="zoom-in">
       <div className="stat-card">
-        <h3>4+</h3>
-        <p>Projects Completed</p>
+        <h3>3+</h3>
+        <p>Deployed Projects</p>
       </div>
 
       <div className="stat-card">
         <h3>B.Tech</h3>
-        <p>Graduate</p>
+        <p>Engineering Graduate</p>
       </div>
 
       <div className="stat-card">
-        <h3>Frontend</h3>
-        <p>Developer</p>
+        <h3>React</h3>
+        <p>Frontend Focus</p>
       </div>
 
       <div className="stat-card">
-        <h3>Python</h3>
-        <p>Flask Developer</p>
+        <h3>Flask</h3>
+        <p>Backend Practice</p>
       </div>
      </section>
  </div>
